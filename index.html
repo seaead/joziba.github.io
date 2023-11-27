@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <title>joziba</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <nav>   
+                <ul>
+                    <li>
+                        <div class="search-bar">
+                            <h3>JOZIBA</h3>
+                            <button class="dropbtn" onclick='toggleSection()'>Shop by <br />
+                                categories</button>
+                            <input type="text" placeholder="Search">
+                            <label for="category" class="dropdown-category">
+                                Category
+                                <select name="category" id="category">
+                                    <option value=""></option>
+                                </select>
+
+                            </label>
+
+                            <button class="search-button"><img src="img/search.svg" width="16px" height="16px"></button>
+                        </div>
+                    </li>
+                    <li><a href="index.html" class="current-page">Explore</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Sign Up</a></li>
+                </ul>
+            </nav>
+
+            <div id="dropdown-menu">
+                <ul>
+                    <li class="general">
+                        <h3>Электроника</h3>
+                        <div class="category-box">
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Телефоны</h5></a></li>
+                                    <li><a href="">Мобильные телефоны</a></li>
+                                    <li><a href="">Аксессуары</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Аудио и видео</h5></a></li>
+                                    <li><a href="">Телевизоры и проекторы</a></li>
+                                    <li><a href="">Наушники</a></li>
+                                    <li><a href="">Акустика, колонки, сабвуферы</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Компьютеры</h5></a></li>
+                                    <li><a href="">Системные блоки</a></li>
+                                    <li><a href="">Моноблоки</a></li>
+                                    <li><a href="">Ноутбуки</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Товары для компьютера</h5></a></li>
+                                    <li><a href="">Комплектующие</a></li>
+                                    <li><a href="">Сетевое оборудование</a></li>
+                                    <li><a href="">Клавиатуры и мыши</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="general">
+                        <h3>Транспорт</h3>
+                        <div class="category-box">
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Автомобили</h5></a></li>
+                                    <li><a href="">Седаны</a></li>
+                                    <li><a href="">Кроссоверы</a></li>
+                                    <li><a href="">Внедорожники</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Мотоциклы и мототехника</h5></a></li>
+                                    <li><a href="">Мопеды и скутеры</a></li>
+                                    <li><a href="">Мотоциклы</a></li>
+                                    <li><a href="">Квадроциклы и багги</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Запчасти и аксессуары</h5></a></li>
+                                    <li><a href="">Запчасти</a></li>
+                                    <li><a href="">Шины, диски и колёса</a></li>
+                                    <li><a href="">Аксессуары</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="general">
+                        <h3>Мода</h3>
+                        <div class="category-box">
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Одежда и обувь</h5></a></li>
+                                    <li><a href="">Женская одежда</a></li>
+                                    <li><a href="">Женская обувь</a></li>
+                                    <li><a href="">Мужская одежда</a></li>
+                                    <li><a href="">Мужская обувь</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Детская одежда и обувь</h5></a></li>
+                                    <li><a href="">Для девочек</a></li>
+                                    <li><a href="">Для мальчиков</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Часы и украшения</h5></a></li>
+                                    <li><a href="">Ювелирные изделия</a></li>
+                                    <li><a href="">Бижутерия</a></li>
+                                    <li><a href="">Часы</a></li>
+                                    <li><a href="">Аксессуары</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="general">
+                        <h3>Недвижимость </h3>
+                        <div class="category-box">
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Купить недвижимость</h5></a></li>
+                                    <li><a href="">Все квартиры</a></li>
+                                    <li><a href="">Вторичка</a></li>
+                                    <li><a href="">Новостройки</a></li>
+                                    <li><a href="">Дома, дачи, коттеджи</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Снять недвижимость</h5></a></li>
+                                    <li><a href="">Квартиры</a></li>
+                                    <li><a href="">Дома, дачи и коттеджи</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Другие категории</h5></a></li>
+                                    <li><a href="">Земельные участки</a></li>
+                                    <li><a href="">Гаражи и машиноместа</a></li>
+                                    <li><a href="">Коммерческая недвижимость</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="general">
+                        <h3>Для дома</h3>
+                        <div class="category-box">
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Ремонт и строительство</h5></a></li>
+                                    <li><a href="">Стройматериалы</a></li>
+                                    <li><a href="">Инструменты</a></li>
+                                    <li><a href="">Сантехника, водоснабжение и сауна</a></li>
+                                    <li><a href="">Двери</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Мебель и интерьер</h5></a></li>
+                                    <li><a href="">Кровати, диваны и кресла</a></li>
+                                    <li><a href="">Шкафы, комоды и стеллажи</a></li>
+                                    <li><a href="">Столы и стулья</a></li>
+                                    <li><a href="">Текстиль и ковры</a></li>
+                                    <li><a href="">Кухонные гарнитуры</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Бытовая техника</h5></a></li>
+                                    <li><a href="">Для кухни</a></li>
+                                    <li><a href="">Для дома</a></li>
+                                    <li><a href="">Климатическое оборудование</a></li>
+                                    <li><a href="">Для индивидуального ухода</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="general">
+                        <h3>Хобби</h3>
+                        <div class="category-box">
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Велосипеды</h5></a></li>
+                                    <li><a href="">Горные</a></li>
+                                    <li><a href="">Дорожные</a></li>
+                                    <li><a href="">ВМХ</a></li>
+                                    <li><a href="">Детские</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Спорт</h5></a></li>
+                                    <li><a href="">Единоборства</a></li>
+                                    <li><a href="">Игры с мячом</a></li>
+                                    <li><a href="">Оборудование для фитнеса</a></li>
+                                    <li><a href="">Спортивное питание</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Другие категории</h5></a></li>
+                                    <li><a href="">Музыкальные инструменты</a></li>
+                                    <li><a href="">Книги</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </header>
+
+        <section class="featured-products">
+            <h1>FEATURED PRODUCTS</h1>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img src="img/an image.jpg" alt="">
+                        <h5>$0</h5>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+        <section class="popular-categories">
+            <h1>POPULAR CATEGORIES</h1>
+            <ul>
+                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
+                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
+                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
+                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
+                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
+                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
+            </ul>
+        </section>
+        <section class="slider">
+            <div class="slider__slides">
+              <div class="slider__slide"><img src="img/Apple-featured-scaled.jpg" alt=""></div>
+              <div class="slider__slide"> <img src="img/cars.jpg" alt=""></div>
+              <div class="slider__slide"><img src="img/balls.jpg" alt=""></div>
+              <!-- Add more slides as needed -->
+            </div>
+            <button class="slider__prev">&lt;</button>
+            <button class="slider__next">&gt;</button>
+        </section>
+          
+        <section class="ads">
+            <div>
+                <h5>SUMMER 2023</h5>
+                <h1>NEW COLLECTION</h1>
+                <h4>We know how large objects will act,<br />
+                    but things on a small scale.</h4>
+                <button>
+                    <h3>SHOP NOW</h3>
+                </button>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <h3>JOZIBA</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+        <script>
+            function toggleSection() {
+              const div = document.getElementById('dropdown-menu');
+              div.style.display = div.style.display === 'none' ? 'block' : 'none';
+            }
+            const prevBtn = document.querySelector('.slider__prev');
+            const nextBtn = document.querySelector('.slider__next');
+            const slides = document.querySelector('.slider__slides');
+
+            let slideIndex = 0;
+
+            // Function to move to the next slide
+            function nextSlide() {
+            slideIndex = (slideIndex + 1) % slides.children.length;
+            updateSlidePosition();
+            }
+
+            // Function to move to the previous slide
+            function prevSlide() {
+            slideIndex = (slideIndex - 1 + slides.children.length) % slides.children.length;
+            updateSlidePosition();
+            }
+
+            // Function to update slide position
+            function updateSlidePosition() {
+            slides.style.transform = `translateX(-${slideIndex * 100}%)`;
+            }
+
+            // Auto slide every 5 seconds
+            setInterval(nextSlide, 5000);
+
+            // Event listeners for prev and next buttons
+            prevBtn.addEventListener('click', prevSlide);
+            nextBtn.addEventListener('click', nextSlide);
+
+        </script>
+    </body>
+</html>

@@ -9,32 +9,69 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     </head>
     <body>
-        <header>
-            <nav>   
-                <ul>
-                    <li>
-                        <div class="search-bar">
-                            <h3>JOZIBA</h3>
-                            <button class="dropbtn" onclick='toggleSection()'>Shop by <br />
-                                categories</button>
-                            <input type="text" placeholder="Search">
-                            <label for="category" class="dropdown-category">
-                                Category
-                                <select name="category" id="category">
-                                    <option value=""></option>
-                                </select>
-
-                            </label>
-
-                            <button class="search-button"><img src="img/search.svg" width="16px" height="16px"></button>
-                        </div>
-                    </li>
-                    <li><a href="index.html" class="current-page">Explore</a></li>
-                    <li><a href="">Login</a></li>
-                    <li><a href="">Sign Up</a></li>
-                </ul>
-            </nav>
-
+        <header> 
+            <div class="search-bar">
+                <h3>JOZIBA</h3>
+                <button class="dropbtn" onclick='toggleSection()'>Shop by <br />
+                    categories</button>
+                <input type="text" placeholder="Search">
+                <div class="dropdown">
+                    <select>
+                        <option value="">Все категории</option>
+                        <option value="">Телефоны</option>
+                        <option value="">Телевизоры и проекторы</option>
+                        <option value="">Наушники</option>
+                        <option value="">Акустика, колонки, сабвуферы</option>
+                        <option value="">Системные блоки</option>
+                        <option value="">Моноблоки</option>
+                        <option value="">Ноутбуки</option>
+                        <option value="">Комплектующие</option>
+                        <option value="">Сетевое оборудование</option>
+                        <option value="">Клавиатуры и мыши</option>
+                        <option value="">Светотехника</option>
+                        <option value="">Машины</option>
+                        <option value="">Мопеды и скутеры</option>
+                        <option value="">Мотоциклы</option>
+                        <option value="">Квадроциклы и багги</option>
+                        <option value="">Запчасти и аксессуары</option>
+                        <option value="">Шины, диски и колёса</option>
+                        <option value="">Женская одежда</option>
+                        <option value="">Женская обувь</option>
+                        <option value="">Мужская одежда</option>
+                        <option value="">Мужская обувь</option>
+                        <option value="">Детская одежда и обувь</option>
+                        <option value="">Ювелирные изделия</option>
+                        <option value="">Бижутерия</option>
+                        <option value="">Часы и аксессуары</option>
+                        <option value="">Квартиры</option>
+                        <option value="">Вторичка</option>
+                        <option value="">Новостройки</option>
+                        <option value="">Дома, дачи, коттеджи</option>
+                        <option value="">Снять недвижимость</option>
+                        <option value="">Земельные участки</option>
+                        <option value="">Гаражи и машиноместа</option>
+                        <option value="">Коммерческая недвижимость</option>
+                        <option value="">Стройматериалы</option>
+                        <option value="">Инструменты</option>
+                        <option value="">Сантехника, водоснабжение и сауна</option>
+                        <option value="">Двери</option>
+                        <option value="">Мебель и интерьер</option>
+                        <option value="">Бытовая техника</option>
+                        <option value="">Велосипеды</option>
+                        <option value="">Спорт</option>
+                        <option value="">Музыкальные инструменты</option>
+                        <option value="">Книги</option>
+                        <option value="">Концелярия</option>
+                        <option value="">Медицинское оборудование</option>
+                    </select>
+                </div>       
+                <button class="search-button"><img src="img/search.svg" width="16px" height="16px"></button>
+                <div class="pages">
+                    <a href="index.html" class="current-page">Explore</a>
+                    <a href="">Login</a>
+                    <a href="">Sign Up</a>
+                </div>
+            </div>
             <div id="dropdown-menu">
                 <ul>
                     <li class="general">
@@ -69,6 +106,15 @@
                                     <li><a href="">Комплектующие</a></li>
                                     <li><a href="">Сетевое оборудование</a></li>
                                     <li><a href="">Клавиатуры и мыши</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Светотехника</h5></a></li>
+                                    <li><a href="">LED лампы</a></li>
+                                    <li><a href="">LED ленты</a></li>
+                                    <li><a href="">Дорожный фонари и прожекторы</a></li>
+                                    <li><a href="">Светильники и люстры</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -224,7 +270,30 @@
                             </div>
                         </div>
                     </li>
-
+                    <li class="general">
+                        <h3>Другие</h3>
+                        <div class="category-box">
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Медицина</h5></a></li>
+                                    <li><a href="">Медицинское оборудование</a></li>
+                                    <li><a href="">Лабараторное оборудование</a></li>
+                                    <li><a href="">Приборы</a></li>
+                                    <li><a href="">Микроскопы</a></li>
+                                    <li><a href="">Пробирки</a></li>
+                                    <li><a href="">Чашки</a></li>
+                                </ul>
+                            </div>
+                            <div class="colbox">
+                                <ul>
+                                    <li><a href=""><h5>Концелярия</h5></a></li>
+                                    <li><a href="">Бумага, папки, степлеры</a></li>
+                                    <li><a href="">Ручки, карандаши, замаски</a></li>
+                                    <li><a href="">Картриджи, чернила</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </header>
@@ -297,12 +366,12 @@
         <section class="popular-categories">
             <h1>POPULAR CATEGORIES</h1>
             <ul>
-                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
-                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
-                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
-                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
-                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
-                <li><a href=""><figure><img src="img/cover.png" alt=""><h5>Electronics</h5></a></li>
+                <li><a href=""><figure><img src="img/sneakers.jpg" alt=""><h5>Одежда и обувь</h5></a></li>
+                <li><a href=""><figure><img src="img/furniture.jpeg" alt=""><h5>Мебель</h5></a></li>
+                <li><a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Телефоны</h5></a></li>
+                <li><a href=""><figure><img src="img/laptop.jpg" alt=""><h5>Ноутбуки</h5></a></li>
+                <li><a href=""><figure><img src="img/tesla.jpg" alt=""><h5>Машины</h5></a></li>
+                <li><a href=""><figure><img src="img/apartment.jpg" alt=""><h5>Новостройки</h5></a></li>
             </ul>
         </section>
         <section class="slider">
@@ -372,6 +441,86 @@
             prevBtn.addEventListener('click', prevSlide);
             nextBtn.addEventListener('click', nextSlide);
 
+            var x, i, j, l, ll, selElmnt, a, b, c;
+            /* Look for any elements with the class "custom-select": */
+            x = document.getElementsByClassName("custom-select");
+            l = x.length;
+            for (i = 0; i < l; i++) {
+            selElmnt = x[i].getElementsByTagName("select")[0];
+            ll = selElmnt.length;
+            /* For each element, create a new DIV that will act as the selected item: */
+            a = document.createElement("DIV");
+            a.setAttribute("class", "select-selected");
+            a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
+            x[i].appendChild(a);
+            /* For each element, create a new DIV that will contain the option list: */
+            b = document.createElement("DIV");
+            b.setAttribute("class", "select-items select-hide");
+            for (j = 1; j < ll; j++) {
+                /* For each option in the original select element,
+                create a new DIV that will act as an option item: */
+                c = document.createElement("DIV");
+                c.innerHTML = selElmnt.options[j].innerHTML;
+                c.addEventListener("click", function(e) {
+                    /* When an item is clicked, update the original select box,
+                    and the selected item: */
+                    var y, i, k, s, h, sl, yl;
+                    s = this.parentNode.parentNode.getElementsByTagName("select")[0];
+                    sl = s.length;
+                    h = this.parentNode.previousSibling;
+                    for (i = 0; i < sl; i++) {
+                    if (s.options[i].innerHTML == this.innerHTML) {
+                        s.selectedIndex = i;
+                        h.innerHTML = this.innerHTML;
+                        y = this.parentNode.getElementsByClassName("same-as-selected");
+                        yl = y.length;
+                        for (k = 0; k < yl; k++) {
+                        y[k].removeAttribute("class");
+                        }
+                        this.setAttribute("class", "same-as-selected");
+                        break;
+                    }
+                    }
+                    h.click();
+                });
+                b.appendChild(c);
+            }
+            x[i].appendChild(b);
+            a.addEventListener("click", function(e) {
+                /* When the select box is clicked, close any other select boxes,
+                and open/close the current select box: */
+                e.stopPropagation();
+                closeAllSelect(this);
+                this.nextSibling.classList.toggle("select-hide");
+                this.classList.toggle("select-arrow-active");
+            });
+            }
+
+            function closeAllSelect(elmnt) {
+            /* A function that will close all select boxes in the document,
+            except the current select box: */
+            var x, y, i, xl, yl, arrNo = [];
+            x = document.getElementsByClassName("select-items");
+            y = document.getElementsByClassName("select-selected");
+            xl = x.length;
+            yl = y.length;
+            for (i = 0; i < yl; i++) {
+                if (elmnt == y[i]) {
+                arrNo.push(i)
+                } else {
+                y[i].classList.remove("select-arrow-active");
+                }
+            }
+            for (i = 0; i < xl; i++) {
+                if (arrNo.indexOf(i)) {
+                x[i].classList.add("select-hide");
+                }
+            }
+            }
+
+            /* If the user clicks anywhere outside the select box,
+            then close all select boxes: */
+            document.addEventListener("click", closeAllSelect);
         </script>
     </body>
 </html>

@@ -23,6 +23,7 @@ header {
     justify-content: center;
     background-color: #FFFFFF;
     padding: 20px;
+
 }
 
 header .search-bar h3 {
@@ -37,7 +38,7 @@ header .search-bar h3 {
     letter-spacing: 0.1px;
     display: inline-flex;
     padding: 13px 93px 13px 0px;
-    margin-left: 55px;
+
 }
 
 a {
@@ -66,43 +67,20 @@ a:hover {
 }
 
 nav {
-    display: inline-flex;
-    padding-right: 0px;
-    align-items: flex-start;
-    justify-content: flex-start;
-
-    gap: 128.5px;
+    display: inline-block;
     background-color: #FFFFFF;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0px 0px 0px 20px;
-    gap: 21px;
-    display: inline-block;
-    color: #737373;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 20px;
-    padding: 2px;
-    margin-left: 20px;
-    justify-content: center;
-    align-items: center;
-    height: 24px;
 }
 
 .search-bar {
     display: inline-flex;
     width: auto;
     height: 58px;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     flex-shrink: 0;
     margin-right: 64px;
     padding: 10px;
+    flex-direction: row;
 }
 
 input {
@@ -120,41 +98,73 @@ input {
     border: 1px solid #E6E6E6;
     background: #F9F9F9;
     padding-left: 10px;
+    font-family: 'Montserrat';
 }
 
-.dropdown-category {
-    display: flex;
-    width: fit-content;
+/* Basic styles for the dropdown */
+.dropdown select {
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-right: 0;
+    width: 200px;
     height: 58px;
-    padding: 15px 26px 15px 23px;
-    justify-content: center;
-    align-items: center;
-    gap: 29px;
-    flex-shrink: 0;
-    border: 1px solid #E6E6E6;
-    background: #F9F9F9;
-    color: #252B42;
-    font-weight: 500;
+    background-color: #F9F9F9;
 }
+  
+  /* Styling the dropdown arrow */
+.dropdown select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('arrow.png'); /* You can replace 'arrow.png' with your own arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: #252B42;
+}
+  
+  /* Hover effect */
+.dropdown select:hover {
+    border-color: #999;
+}
+  
+
+
+.pages {
+    margin-left: 100px;
+    height: inherit;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #737373;
+    gap: 10px;
+}
+
+.pages a {
+    display: inline-block;
+    margin-right: 20px;
+    padding: 2px;
+    height: 24px;
+}
+
+
 
 .search-button {
     border-radius: 0px 5px 5px 0px;
     border: 1px solid #E6E6E6;
-    background: var(--primary-color, #0077C2);
-    display: flex;
-    width: 60.001px;
+    background: var(--primary-color, #23A6F0);
+    display: inline-flex;
+    width: 60px;
     height: 58px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
+
 }
 
 .search-button:hover {
-    border: #0077C2 solid 5px;
-}
-
-select {
-
+    border: #23A6F0 solid 5px;
 }
 
 /* Dropdown Button */
@@ -164,7 +174,7 @@ select {
     background: #F9F9F9;
 
     padding: 10px ;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
     font-family: 'Montserrat';
     display: inline-flex;
@@ -204,7 +214,7 @@ select {
     padding: 10px 20px;
     display: block;
     text-align: center;
-    width: 16.6%;
+    width: 14.2%;
 }
 
 #dropdown-menu ul .general h3 {
@@ -369,14 +379,14 @@ select {
     width: 50px;
     height: 70px;
     padding: 60px 98px;
-
     
 }
 
 .popular-categories ul li figure img {
-    display: inline-block;
     border-radius: 50%;
     box-shadow: 0px 0px 3px #737373;
+    width: 150px;
+    height: 150px;
 }
 
 .popular-categories ul li figure img:hover {
@@ -524,8 +534,12 @@ select {
     align-items: center;
     gap: 10px;
     border-radius: 5px;
-    background: var(--primary-color, #0077C2);
+    background: var(--primary-color, #23A6F0);
     border: none;
+}
+
+.ads div button:hover {
+    background-color: #0077C2;
 }
 
 .ads div button h3 {
@@ -542,10 +556,9 @@ select {
 }
 
 footer {
-    display: flex;
+    display: grid;
     width: 1440px;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
     background: var(--dark-background-color, #252B42);
 }
 
@@ -563,10 +576,11 @@ footer nav ul {
     padding: 20px;
     list-style-type: none;
     align-items: start;
-    gap: 15px;
+    gap: 20px;
 }
 
 footer nav ul li {
+    padding: 10px;
     display: flex;
     width: 43px;
     height: 24px;
@@ -599,7 +613,7 @@ footer nav h3 {
     font-weight: 700;
     line-height: 32px; /* 133.333% */
     letter-spacing: 0.1px;
-    margin: 15px 60px 0px 0px;
+    margin: 15px 60px 0px 300px;
 }
 
 

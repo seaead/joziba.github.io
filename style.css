@@ -18,23 +18,22 @@ body {
 }
 
 header {
-    width: 1440px;
-    display: grid;
-    justify-content: center;
+    display: flex;
+    align-items: center;
     background-color: #FFFFFF;
     padding: 20px;
 
 }
 
-header .search-bar h3 {
-    color: #0077C2;
+header h3 {
+    color: #306be1;
 
-    /* h3 */
+
     font-family: 'Montserrat';
     font-size: 30px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px; 
     letter-spacing: 0.1px;
     display: inline-flex;
     padding: 13px 93px 13px 0px;
@@ -45,12 +44,12 @@ a {
     text-decoration: none;
     color: var(--second-text-color, #737373);
     text-align: center;
-    /* link */
+
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
     letter-spacing: 0.2px;
 }
 
@@ -73,12 +72,11 @@ nav {
 
 .search-bar {
     display: inline-flex;
-    width: auto;
-    height: 58px;
+
     justify-content: flex-start;
     align-items: flex-start;
     flex-shrink: 0;
-    margin-right: 64px;
+
     padding: 10px;
     flex-direction: row;
 }
@@ -89,7 +87,7 @@ input {
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 200% */
+    line-height: 28px;
     letter-spacing: 0.2px;
     border: hidden;
     width: fit-content;
@@ -101,7 +99,7 @@ input {
     font-family: 'Montserrat';
 }
 
-/* Basic styles for the dropdown */
+
 .dropdown select {
     padding: 10px;
     font-size: 15px;
@@ -111,13 +109,12 @@ input {
     height: 58px;
     background-color: #F9F9F9;
 }
-  
-  /* Styling the dropdown arrow */
+
 .dropdown select {
     appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-    background-image: url('arrow.png'); /* You can replace 'arrow.png' with your own arrow icon */
+    background-image: url('arrow.png');
     background-repeat: no-repeat;
     background-position: right 10px center;
     font-family: 'Montserrat';
@@ -125,7 +122,7 @@ input {
     color: #252B42;
 }
   
-  /* Hover effect */
+
 .dropdown select:hover {
     border-color: #999;
 }
@@ -136,9 +133,10 @@ input {
     margin-left: 100px;
     height: inherit;
     display: inline-flex;
-    align-items: center;
+    align-items: baseline;
     justify-content: center;
     color: #737373;
+    padding: 10px 0px;
     gap: 10px;
 }
 
@@ -146,7 +144,7 @@ input {
     display: inline-block;
     margin-right: 20px;
     padding: 2px;
-    height: 24px;
+
 }
 
 
@@ -167,7 +165,7 @@ input {
     border: #23A6F0 solid 5px;
 }
 
-/* Dropdown Button */
+
 .dropbtn {
     border: 1px solid #E6E6E6;
     color: #252B42;
@@ -188,57 +186,190 @@ input {
 }
 
 #dropdown-menu {
-    margin-top: 60px;
-
+    flex-direction: column;
+    z-index: 3;
+    top: 90px;
     position:absolute;
     display: none;
     background: #F9F9F9;
-    width: 100%;
-
-    /* accentued-drop-shadow */
-    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+    width: 30%;
+    height: 500px;
+    padding: 20px 0px 20px 20px;
+    
 }
 
 
 #dropdown-menu ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 0;
     list-style-type: none;
     align-items: flex-start;
     justify-items: flex-start;
     text-align: start;
+    z-index: 3;
 }
 
-#dropdown-menu ul .general {
-    padding: 10px 20px;
-    display: block;
+.general {
+    padding: 0px;
+    display: flex;
+    text-align: start;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.general h3 {
+    padding: 10px 10px;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
     text-align: center;
-    width: 14.2%;
 }
 
-#dropdown-menu ul .general h3 {
+.specific h4{
+    font-size: 14px;
+    color: #333;
+    font-weight: 500;
+}
+
+.general:hover .specific{
+    display: flex;
+}
+
+.general:hover {
+    background-color: #E6E6E6;
+}
+
+.general:hover  h3 {
+    font-weight: 700;
+}
+
+.specific {
+    display: none;
+    flex-direction: column;
+    position:absolute;
+    z-index:3;
+    left: 100%;
+    top: 0;
+    background-color: #F9F9F9;
+    width: 90%;
+    height: 500px;
+}
+
+.specific ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.specific ul li {
+    padding: 10px;
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.specific ul li:hover {
+    background-color: #E6E6E6;
+}
+
+.specific ul li:hover h4 {
+    font-weight: 600;
+}
+
+.category-box {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 100%;
+    width: 100%;
+    height: 500px;
+    flex-direction: column;
+    background-color: #F9F9F9;
+    z-index: 3;
+    padding: 0px 20px 0px 20px;
+    justify-content: space-around;
+
+}
+
+.col-box {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+
+.specific ul li:hover .category-box {
+    display: inline-flex;
+}
+
+
+.col-box figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.col-box figure img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.col-box h5 {
+    font-size: 10px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    width: 100px;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+
+.col-box figure:hover img{
+    border-radius: 49%;
+    box-shadow: 0 0 3px #737373;
+}
+
+
+#dropdown-menu, .specific, .category-box {
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+
+
+/*#dropdown-menu ul .general h3 {
     color: var(--text-color, #252B42);
 
-    /* h5 */
+
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: 0.1px;
 }
 
 #dropdown-menu ul .general .category-box {
     display: none;
     position:absolute;
-    background-color: #F9F9F9;
-    padding: 0px 10px 30px 10px;
+    background-color: #ff0000;
+    flex-direction: column;
     width: 100%;
     align-items: flex-start;
     justify-content: flex-start;
-    right: 0px;
+    top: 0px;
+    left: 170px;
     margin-top: 10px;
+    z-index: 4;
 }
 
 #dropdown-menu ul .general:hover {
@@ -259,12 +390,11 @@ input {
 #dropdown-menu ul .general .category-box .colbox h5 {
     color: var(--text-color, #252B42);
 
-    /* h5 */
     font-family: 'Montserrat';
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: 0.1px;
 }
 
@@ -285,28 +415,27 @@ input {
 #dropdown-menu ul .general .category-box .colbox ul li a {
     color: var(--second-text-color, #737373);
 
-    /* link */
+
     font-family: 'Montserrat';
     font-size: 12px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
     letter-spacing: 0.2px;
-}
+}*/
   
-.slider {
+.slider{
     position: relative;
     width: 100%;
     overflow: hidden;
 }
-  
-  /* Style each slide */
-.slider__slides {
+
+.slider__slides{
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
   
-.slider__slide {
+.slider__slide{
     min-width: 100%;
     flex: 0 0 auto;
 }
@@ -316,7 +445,7 @@ input {
     height: 300px;
 }
   
-  /* Style the navigation buttons */
+
 .slider__prev,
 .slider__next {
     position: absolute;
@@ -342,7 +471,7 @@ input {
     display: inline-flex;
     flex-direction: column;
     align-items: baseline;
-    justify-content: baseline;
+    justify-content: space-between;
 
 }
 
@@ -385,7 +514,7 @@ input {
 .popular-categories ul li figure img {
     border-radius: 50%;
     box-shadow: 0px 0px 3px #737373;
-    width: 150px;
+    max-width: 150px;
     height: 150px;
 }
 
@@ -420,9 +549,9 @@ input {
     height: 300px;
     list-style-type: none;
     display: flex;
-    overflow-y: auto ; /* enable horizontal scrolling */
-    scrollbar-width: thin; /* set the scroll bar width */
-    scrollbar-color: #333 #ccc; /* set the scroll bar color */
+    overflow-y: auto ;
+    scrollbar-width: thin;
+    scrollbar-color: #333 #ccc;
     gap: 25px;
     margin-left: 38px;
 }
@@ -448,31 +577,31 @@ input {
 
 .featured-products ul li figure p {
     color: var(--second-text-color, #737373);
-    /* paragraph */
+
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 20px; /* 142.857% */
+    line-height: 20px;
     letter-spacing: 0.2px;
 }
 
 .featured-products ul li figure h5 {
     color: var(--secondary-color-1, #23856D);
     text-align: left;
-    /* h5 */
+
     font-family: 'Montserrat';
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
     letter-spacing: 0.1px;
 }
 
 .ads {
     margin-left: 30px;
     display: flex;
-    width: 1292px;
+    max-width:1292px;
     padding-bottom: 0px;
     justify-content: center;
     align-items: center;
@@ -494,36 +623,34 @@ input {
 .ads div h5 {
     color: var(--hover-text-color, #2A7CC7);
 
-    /* h5 */
     font-family: 'Montserrat';
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px; 
     letter-spacing: 0.1px;
 }
 
 .ads div h1 {
     color: var(--text-color, #252B42);
 
-    /* h1 */
+
     font-family: 'Montserrat';
     font-size: 58px;
     font-style: normal;
     font-weight: 600;
-    line-height: 80px; /* 137.931% */
+    line-height: 80px; 
     letter-spacing: 0.2px;
 }
 
 .ads div h4 {
     color: var(--second-text-color, #737373);
 
-    /* h4 */
     font-family: 'Montserrat';
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px; /* 150% */
+    line-height: 30px; 
     letter-spacing: 0.2px;
 }
 
@@ -546,12 +673,11 @@ input {
     color: var(--light-text-color, #FFF);
     text-align: center;
 
-    /* h3 */
     font-family: 'Montserrat';
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px; 
     letter-spacing: 0.1px;
 }
 
@@ -591,13 +717,12 @@ footer nav ul li {
 footer nav ul li a {
     color: var(--muted-color, #BDBDBD);
     text-align: center;
-    
-    /* link */
+
     font-family: 'Montserrat';
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 24px; /* 171.429% */
+    line-height: 24px;
     letter-spacing: 0.2px;
 }
 
@@ -606,12 +731,12 @@ footer nav ul li a {
 footer nav h3 {
     color: var(--text-color, #ffffff73);
 
-    /* h3 */
+
     font-family: 'Montserrat';
     font-size: 24px;
     font-style: normal;
     font-weight: 700;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px; 
     letter-spacing: 0.1px;
     margin: 15px 60px 0px 300px;
 }
@@ -625,83 +750,189 @@ footer .logo {
     align-items: center;
 }
 
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 620px) {
     header {
-      width: 100%;
-      padding: 10px;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+        place-items: center;
+
     }
-  
+
+    header h3 {
+        font-size: 20px;
+        padding: 0;
+        display: flex;
+        
+    }
+
     header .search-bar {
-      margin-right: 10px;
+        margin-right: 0;
+
+        display: flex;
+        justify-content: flex-start;
+        
     }
-  
+
+    input, .dropdown select, .search-button {
+        height: 34px;
+        font-size: 8px;
+        width: auto;
+    }
+
     nav {
-      gap: 20px;
-      padding-right: 5px;
+        gap: 20px;
+        padding-right: 5px;
+        display: inline-block;
+        
     }
-  
-    nav ul {
-      margin-left: 10px;
+
+    .dropbtn{
+        display: none;
     }
-  
-    .dropdown-category,
-    .search-button {
-      display: none;
+
+    .pages {
+        margin-left: 30px;
+        gap: 5px;
+        font-size: 10px;
+        padding: 5px 0px;
     }
-  
+
     .slider__slide img {
-      height: 200px;
+        height: 200px;
+        width: 100%;
     }
-  
+
     .popular-categories h1,
     .featured-products h1 {
-      font-size: 18px;
-      margin: 20px 0px 10px 10px;
+        font-size: 18px;
+        margin: 20px 0px 10px 10px;
     }
-  
+
     .featured-products ul {
-      margin-left: 10px;
+        margin-left: 10px;
     }
-  
+
     .featured-products ul li figure {
-      width: 150px;
-      height: 180px;
+        width: 150px;
+        height: 180px;
     }
-  
+
     .featured-products ul li figure img {
-      width: 150px;
-      height: 150px;
+        width: 150px;
+        height: 150px;
     }
-  
+
     .ads div h1 {
-      font-size: 40px;
-      line-height: 60px;
+        font-size: 40px;
+        line-height: 60px;
     }
-  
+
     .ads div h4 {
-      font-size: 16px;
-      line-height: 24px;
+        font-size: 16px;
+        line-height: 24px;
     }
-  
+
     .ads div button {
-      padding: 10px 20px;
+        padding: 10px 20px;
     }
-  
+
     footer {
-      width: 100%;
+        width: 100%;
     }
-  
+
     footer nav {
-      padding: 10px;
+        padding: 10px;
     }
-  
+
     footer nav ul {
-      gap: 10px;
+        gap: 10px;
     }
-  
+
+
     footer nav h3 {
-      margin: 10px 30px 0px 0px;
-      font-size: 20px;
-      line-height: 28px;
+        margin: 10px 30px 0px 0px;
+        font-size: 20px;
+        line-height: 28px;
     }
 }
+
+.description-box {
+    display: flex;
+
+}
+
+.item{
+    position: relative;
+    width: 30%;
+    overflow: hidden;
+}
+  
+
+.item-images{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.image{
+    min-width: 100%;
+    flex: 0 0 auto;
+}
+
+.image img {
+    width: 100%;
+    height: 300px;
+}
+
+.description {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+}
+
+.description h4 {
+    font-weight: 600;
+}
+
+.signin-box {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 600px
+}
+
+.signin-box input {
+    width: 60%;
+}
+
+.signin-button {
+    margin-top: 40px;
+    width: 60%;
+    border-radius: 10px;
+    padding: 20px 30px;
+    color: #FFFFFF;
+    background-color: #23A6F0;
+    border: none;
+}
+
+.signin-button:hover {
+    background-color: #0077C2;
+}
+
+.signin-box h1 {
+    color: #306be1;
+    font-family: 'Montserrat';
+    
+}
+

@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width,initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>joziba</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +11,14 @@
     </head>
     <body>
         <header> 
-            <h3>JOZIBA</h3>
+            <div class="pages">
+                <h3>JOZIBA</h3>
+                <a href="index.html" class="current-page">Login</a>
+                <a href="sign_in.html">Sign Up</a>
+            </div>
+
             <div class="search-bar">
-                <button class="dropbtn" onclick='toggleSection()'>Shop by <br />
+                <button class="dropbtn" onclick='toggleSection()'>All<br />
                     categories</button>
                 <input type="text" placeholder="Search">
                 <div class="dropdown">
@@ -67,11 +72,8 @@
                     </select>
                 </div>       
                 <button class="search-button"><img src="img/search.svg" width="16px" height="16px"></button>
-                <div class="pages">
-                    <a href="index.html" class="current-page">Explore</a>
-                    <a href="sign_in.html">Sign Up</a>
-                </div>
             </div>
+
             <div id="dropdown-menu">
                 <ul>
                     <li class="general">

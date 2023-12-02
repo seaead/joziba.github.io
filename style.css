@@ -35,7 +35,6 @@ header h3 {
     font-weight: 700;
     line-height: 32px; 
     letter-spacing: 0.1px;
-    display: inline-flex;
     padding: 13px 93px 13px 0px;
 
 }
@@ -66,7 +65,7 @@ a:hover {
 }
 
 nav {
-    display: inline-block;
+    display: inline-flex;
     background-color: #FFFFFF;
 }
 
@@ -495,8 +494,8 @@ input {
 }
 
 .popular-categories ul li {
-    display: inline;
- 
+    display: inline-flex;
+    gap: 50px;
 }
 
 .popular-categories ul li figure {
@@ -505,16 +504,13 @@ input {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50px;
-    height: 70px;
-    padding: 60px 98px;
-    
+    width: 150px;
 }
 
 .popular-categories ul li figure img {
     border-radius: 50%;
     box-shadow: 0px 0px 3px #737373;
-    max-width: 150px;
+    width: 100%;
     height: 150px;
 }
 
@@ -599,7 +595,7 @@ input {
 }
 
 .ads {
-    margin-left: 30px;
+    margin: 0px 30px;
     display: flex;
     max-width:1292px;
     padding-bottom: 0px;
@@ -682,8 +678,8 @@ input {
 }
 
 footer {
-    display: grid;
-    width: 1440px;
+    display: flex;
+    align-items: flex-start;
     justify-content: flex-start;
     background: var(--dark-background-color, #252B42);
 }
@@ -694,7 +690,6 @@ footer nav {
     height: 58px;
     justify-content: start;
     align-items: start;
-    margin: auto;
 }
 
 footer nav ul {
@@ -741,8 +736,6 @@ footer nav h3 {
     margin: 15px 60px 0px 300px;
 }
 
-
-
 footer .logo {
     display: flex;
     height: 58px;
@@ -750,8 +743,102 @@ footer .logo {
     align-items: center;
 }
 
+@media only screen and (max-width: 1342px) {
+    .popular-categories ul li {
+        gap: 30px;
+    }
+}
 
-@media only screen and (max-width: 620px) {
+@media only screen and (max-width: 1220px) {
+    .popular-categories ul li figure {
+        width: 135px;
+    }
+
+    .popular-categories ul li figure img {
+        height: 135px;
+    }
+
+    .popular-categories ul li figure h5 {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    header h3 {
+        padding: 10px 50px 10px 0px;
+    }
+
+    .pages {
+        margin-left: 70px;
+    }
+
+    .popular-categories ul li {
+        gap: 25px;
+    }
+
+    .popular-categories ul li figure {
+        width: 120px;
+    }
+
+    .popular-categories ul li figure img {
+        height: 120px;
+    }
+
+    .popular-categories ul li figure h5 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1010px) {
+    header h3 {
+        padding: 10px 20px 10px 0px;
+    }
+
+    .pages {
+        margin-left: 50px;
+    }
+
+    .popular-categories ul li {
+        gap: 20px;
+    }
+
+    .popular-categories ul li figure h5 {
+        font-size: 10px;
+    }
+
+    .slider__slide{
+        min-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .popular-categories ul li figure {
+        width: 110px;
+    }
+
+    .popular-categories ul li figure img {
+        height: 110px;
+    }
+}
+
+@media only screen and (max-width: 715px) {
+    header {
+        padding: 10px;
+
+    }
+
+    header h3 {
+        font-size: 24px;
+        padding: 10px 60px 10px 0px;
+    }
+
+    nav {
+        
+    }
+}
+
+@media only screen and (max-width: 400px) {
     header {
         width: 100%;
         padding: 10px;

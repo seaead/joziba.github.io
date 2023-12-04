@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>josiba</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -11,9 +11,14 @@
 </head>
 <body>
     <header> 
-        <h3>JOZIBA</h3>
+        <div class="pages">
+            <h3>JOZIBA</h3>
+            <a href="" class="current-page">Register</a>
+            <a href="sign_in.html">Sign in</a>
+        </div>
+
         <div class="search-bar">
-            <button class="dropbtn" onclick='toggleSection()'>Shop by <br />
+            <button class="dropbtn" onclick='toggleSection()'>All<br />
                 categories</button>
             <input type="text" placeholder="Search">
             <div class="dropdown">
@@ -67,15 +72,1048 @@
                 </select>
             </div>       
             <button class="search-button"><img src="img/search.svg" width="16px" height="16px"></button>
-            <div class="pages">
-                <a href="index.html" class="current-page">Explore</a>
-                <a href="sign_in.html">Sign Up</a>
-            </div>
         </div>
+
         <div id="dropdown-menu">
             <ul>
                 <li class="general">
-                    <h3>Электроника</h3>
+                    <h3>Популярные категории</h3>
+                    <div class="specific">
+                        <ul>
+                            <li>
+                                <h4>Бытовая электроника</h4>
+                                <div class="category-box">
+                                    <a href=""><h4>Бытовая электроника ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>5G смартфон</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сумки и чехлы для мобильных телефонов</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Вкладыши и наушники-вкладыши</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Зарядки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Смарт-часы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Динамики</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Зарядные банки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кабели данных</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Интернет-телевидениеи</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Одежда</h4>
+                                <div class="category-box" style="top: -100%;">
+                                    <a href=""><h4>Одежда ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мужские толстовки и кофты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мужские футболки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Женские комплекты</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Повседневные платья</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мужские куртки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бейсболки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Шапочки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мужские штаны и брюки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Тренировочной одежды</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Дом и сад</h4>
+                                <div class="category-box" style="top: -200%;">
+                                    <a href=""><h4>Дом и сад ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кружки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бутылки для воды</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Коробки и контейнеры для хранения</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Жалюзи и шторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие одеяла</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие Рождество Декорации</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другая сторона Декорации</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Блюда и тарелки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Вакуумные колбы и</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Спорт и развлечения</h4>
+                                <div class="category-box" style="top: -300%;">
+                                    <a href=""><h4>Спорт и развлечения ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрические скутеры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Футбольные бутсы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрический велосипед для поездок по городу</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрический гибридный велосипед</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие товары для спорта и развлечений</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрический горный велосипед</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Горный велосипед</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Палатка для выставки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Игровые автоматы</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Промышленное оборудование</h4>
+                                <div class="category-box" style="top: -400%;">
+                                    <a href=""><h4>Промышленное оборудование ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Струйные принтеры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие закуски машины</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Тракторы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Разливочные машины</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Термопрессы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Швейные машины</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Многофункциональные упаковочные машины</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Оборудование для очистки воды</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Детали для машинных</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Красота</h4>
+                                <div class="category-box" style="top: -500%;">
+                                    <a href=""><h4>Красота ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Парики</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Волосы для наращивания</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Накладные ресницы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ленточные Eeylashes</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>УФ-гель</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Губная помада</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Искусственные ногти</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кожа Уход Сыворотка</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Тени для век</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Мать, Дети и Игрушки</h4>
+                                <div class="category-box" style="top: -600%;">
+                                    <a href=""><h4>Мать, Дети и Игрушки ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Поездка на автомобиле</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Мягкие и плюшевые животные</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Для мальчиков комплекты одежды</h5></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Для девочек платья</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Другие развивающие игрушки</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Для девочек Одежда наборы для ухода за кожей</h5></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Ребенок комбинезоны</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Игрушечные пистолеты</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Повседневная обувь</h5></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Часы, ювелирные изделия, очки</h4>
+                                <div class="category-box" style="top: -700%;">
+                                    <a href=""><h4>Часы, ювелирные изделия, очки ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кварцевые часы для мужчин</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ожерелья</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Гибкие и жесткие браслеты</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Серьги</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Солнцезащитные очки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кольца</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ожерелья</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Коробки для украшений</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ювелирные наборы</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Печать и упаковка</h4>
+                                <div class="category-box" style="top: -800%;">
+                                    <a href=""><h4>Печать и упаковка ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумажные коробки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластик Сумки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стеклянные бутылки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Трансферная печать</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Упаковочные этикетки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластиковые бутылки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумажные пакеты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумага и картон для печати</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Почтовые сумки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Бытовая техника</h4>
+                                <div class="category-box" style="top: -900%;">
+                                    <a href=""><h4>Бытовая техника ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Машинка для стрижки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Блендеры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ароматические диффузоры</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сокодавилки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Увлажнители</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Аэрогрили</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Фен</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Портативные и надеваемые вентиляторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрические чайники</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Офисные и школьные принадлежности</h4>
+                                <div class="category-box" style="top: -1000%;">
+                                    <a href=""><h4>Офисные и школьные принадлежности ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Блокноты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Шариковые ручки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Копировальная бумага</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие товары для принтера</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Гелевые ручки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Блокноты для заметок</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Папки и файлы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Маркеры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Марки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="general">
+                    <h3>Декор для дома</h3>
+                    <div class="specific">
+                        <ul>
+                            <li>
+                                <h4>Подарки и поделки</h4>
+                                <div class="category-box">
+                                   <a href=""><h4>Подарки и поделки ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Металлические поделки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Подарочные карты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Смола для поделок</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Металлические брелки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Поощрительный подарок Комплекты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Хрустальные поделки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Деревянные поделки, деревянные ящики и настенные знаки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластиковые брелки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Рекламные брелки и</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Строительство и недвижимость</h4>
+                                <div class="category-box" style="top: -100%;">
+                                   <a href=""><h4>Строительство и недвижимость ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Контейнерные дома</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластиковый настил</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Otherrs Обои/стеновые панели</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие доски</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другое Двери</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие сборные дома</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Плитка</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Смесители для ванной и душа</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стеновые панели/доски</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Дом и сад</h4>
+                                <div class="category-box" style="top: -200%;">
+                                    <a href=""><h4>Дом и сад ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кружки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бутылки для воды</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Коробки и контейнеры для хранения</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Жалюзи и шторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие одеяла</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие Рождество Декорации</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другая сторона Декорации</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Блюда и тарелки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Вакуумные колбы и</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Лампы и освещение</h4>
+                                <div class="category-box" style="top: -300%;">
+                                   <a href=""><h4>Лампы и освещение ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Подвесные светильники и люстры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сценическое освещение</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Умное Домашнее освещение с помощью светодиодов</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ночники</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Настольные лампы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Умный свет прокладки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Фонари и сигнальные огни</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Солнечный уличного света</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Солнечный свет сада</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Мебель</h4>
+                                <div class="category-box" style="top: -400%;">
+                                   <a href=""><h4>Мебель ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Диваны для гостиной</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Обеденные столы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Обеденные стулья</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Матрасы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Шкафы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Журнальные столы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Офисные стулья</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стулья для гостиной</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Гостиничные стулья</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Товары для домашних животных</h4>
+                                <div class="category-box" style="top: -500%;">
+                                   <a href=""><h4>Товары для домашних животных ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Миски и кормушки для животных</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Pet Кровати</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Pet Груминг продукты</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Аквариумы и аксессуары</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Утилизации отходов</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Pet Клетки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Pet интерактивные & движение Игрушки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Домашнее животное Жевательная Игрушки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Pet Ошейники</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                <li class="general">
+                    <h3>Индустриальный</h3>
+                    <div class="specific">
+                        <ul>
+                            <li>
+                                <h4>Транспорт и средства передвижения</h4>
+                                <div class="category-box">
+                                   <a href=""><h4>Транспорт и средства передвижения ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Автомобили б/у</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Новые электромобили</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрические мотоциклы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Новые автомобили</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Внедорожные мотоциклы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрические трициклы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие мотоциклы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Minibike/Pocketbikes</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрические автомобили</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Промышленное оборудование</h4>
+                                <div class="category-box" style="top: -100%;">
+                                    <a href=""><h4>Промышленное оборудование ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Струйные принтеры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие закуски машины</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Тракторы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Разливочные машины</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Термопрессы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Швейные машины</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Многофункциональные упаковочные машины</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Оборудование для очистки воды</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Детали для машинных</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Коммерческое оборудование</h4>
+                                <div class="category-box" style="top: -200%;">
+                                   <a href=""><h4>Коммерческое оборудование ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электронные знаки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Экспозиционные стеллажи</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Цифровые вывески и дисплеи</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие товары для отелей и ресторанов</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Звуковое оборудование/Усилители/динамик</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Фото стенд</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Холодильное оборудование</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Вендинговые автоматы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Аудио звуковое</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Электрооборудование и принадлежности</h4>
+                                <div class="category-box" style="top: -300%;">
+                                   <a href=""><h4>Электрооборудование и принадлежности ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Профессиональное аудио- и видеооборудование, освещение</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочее электрическое оборудование</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Разъемы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Дизельные генераторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Вилки и розетки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>ПЛК</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Инверторы и преобразователи</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Настенные переключатели</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрические провода</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Автозапчасти и принадлежности</h4>
+                                <div class="category-box" style="top: -400%;">
+                                   <a href=""><h4>Автозапчасти и принадлежности ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Автомобильные бамперы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие аксессуары для автомобильных фар</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Светодиодные фары</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие автомобильные запчасти</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Колеса для легкового автомобиля</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие детали для двигателей</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие фары</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие запчасти для мотоциклов</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие запчасти для</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Строительная и строительная техника</h4>
+                                <div class="category-box" style="top: -500%;">
+                                   <a href=""><h4>Строительная и строительная техника ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Запчасти для строительной техники</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Экскаваторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Погрузчики</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Б/у экскаваторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Оборудование для производства кирпича</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Буровая установка для шахт</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Б/у погрузчики</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Машины для производства плитки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бетономешалки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Автомобильные аксессуары, электорники</h4>
+                                <div class="category-box" style="top: -600%;">
+                                   <a href=""><h4>Автомобильные аксессуары, электорники ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Автомобильный DVD-плеер</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие Внешние аксессуары</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Диагностические инструменты</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие Аксессуары для салона</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Коврики для авто</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Чехлы для автомобильных сидений</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Автомойка</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Освежитель воздуха в авто</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие инструменты</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="general">
+                    <h3>Техническое обслуживание</h3>
+                    <div class="specific">
+                        <ul>
+                            <li>
+                                <h4>Безопасность</h4>
+                                <div class="category-box">
+                                   <a href=""> <h4>Безопасность ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сетевая камера</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Контроль доступа карт</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Смарт-замки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мини-камера</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сигнализация</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Замки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Цилиндр замка</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Системы CCTV</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Аналоговая камера</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Передача энергии</h4>
+                                <div class="category-box" style="top: -100%;">
+                                <a href=""><h4>Передача энергии ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Двигатель постоянного тока</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Двигатель переменного тока</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Радиальные шарикоподшипники</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Гидравлические насосы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Гидравлические клапаны</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Гидравлические компоненты</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Приводные ремни</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Редукторы скорости</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Контроллер двигателя</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Подача материалов</h4>
+                                <div class="category-box" style="top: -200%;">
+                                   <a href=""><h4>Подача материалов ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Вилочные погрузчики</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Подъемные платформы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стеллажи и полки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Запчасти для погрузочного оборудования</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ручные тележки и повозки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Подъемники</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Конвейеры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другое грузоподъемное оборудование</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие лебедки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Инструменты и оборудование</h4>
+                                <div class="category-box" style="top: -300%;">
+                                   <a href=""><h4>Инструменты и оборудование ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие ручные инструменты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Наборы инструментов</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие перфораторы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Насосы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Нож</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Фитинги для труб</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Абразивные инструменты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Цепная пила</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие инструменты</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Возобновляемые источники энергии</h4>
+                                <div class="category-box" style="top: -400%;">
+                                   <a href=""><h4>Возобновляемые источники энергии ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Литий-ионные аккумуляторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Энергетическая система на солнечной батарее</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Солнечные инверторы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Солнечные панели</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Портативная электростанция</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Home Energy Storage Система</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Свинцово-кислотные аккумуляторы для мотоциклов</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ветрогенераторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие батарейки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Электронные компоненты</h4>
+                                <div class="category-box" style="top: -500%;">
+                                   <a href=""><h4>Электронные компоненты ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие изоляторы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Волокно оптическое оборудование</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Модуль ЖК-дисплея</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие электронные компоненты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Коммуникационные кабели</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сборка печатных плат</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие коммуникационные и Сетевое подключение продукты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Изоляционные материалы и элементы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие ПП и ПП в сборе</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="general">
+                    <h3>Здоровье и личная гигиена</h3>
+                    <div class="specific">
+                        <ul>
+                            <li>
+                                <h4>Еда и напитки</h4>
+                                <div class="category-box">
+                                   <a href=""><h4>Еда и напитки ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Конфеты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Шоколад</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ароматизированный чай</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пищевые добавки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Чай для похудения</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Растворимый кофе</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Энергетические напитки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Моноспеции и травы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Масло подсолнечное</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Медицинские приборы и расходные материалы</h4>
+                                <div class="category-box" style="top: -100%;">
+                                   <a href=""><h4>Медицинские приборы и расходные материалы ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие медицинские расходные материалы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие ветеринарные инструменты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Основные хирургические инструменты</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другое стоматологическое оборудование</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Оборудование и приспособления для ухода за полостью рта</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Оборудование для физической терапии</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Горячие & холодные пакеты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сфигмоманометры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Клинические аналитические</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Печать и упаковка</h4>
+                                <div class="category-box" style="top: -200%;">
+                                    <a href=""><h4>Печать и упаковка ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумажные коробки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластик Сумки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стеклянные бутылки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Трансферная печать</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Упаковочные этикетки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластиковые бутылки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумажные пакеты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумага и картон для печати</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Почтовые сумки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Спорт и развлечения</h4>
+                                <div class="category-box" style="top: -300%;">
+                                    <a href=""><h4>Спорт и развлечения ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрические скутеры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Футбольные бутсы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрический велосипед для поездок по городу</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрический гибридный велосипед</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие товары для спорта и развлечений</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Электрический горный велосипед</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Горный велосипед</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Палатка для выставки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Игровые автоматы</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Персональный Уход & Домашняя уборка</h4>
+                                <div class="category-box" style="top: -400%;">
+                                   <a href=""><h4>Персональный Уход & Домашняя уборка ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Эфирное масло</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Для ухода за волосами</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие аксессуары для отбеливания зубов</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мыло</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Инструменты для наращивания волос</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Лосьон для тела</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Шампунь</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стиральный порошок</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Маски для волос</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Мать, Дети и Игрушки</h4>
+                                <div class="category-box" style="top: -500%;">
+                                    <a href=""><h4>Мать, Дети и Игрушки ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Поездка на автомобиле</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Мягкие и плюшевые животные</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Для мальчиков комплекты одежды</h5></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Для девочек платья</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Другие развивающие игрушки</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Для девочек Одежда наборы для ухода за кожей</h5></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Ребенок комбинезоны</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Игрушечные пистолеты</h5></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""></figure><h5>Повседневная обувь</h5></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="general">
+                    <h3>Мода и красота</h3>
+                    <div class="specific">
+                        <ul>
+                            <li>
+                                <h4>Обувь и аксессуары</h4>
+                                <div class="category-box">
+                                   <a href=""><h4>Обувь и аксессуары ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Обувь для прогулок</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Обувь и аксессуары</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Скейтерская обувь</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Формальная обувь</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другая модная обувь</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Босоножки на каблуке</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Туфли-лодочки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Шлепанцы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кроссовки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Одежда</h4>
+                                <div class="category-box" style="top: -100%;">
+                                    <a href=""><h4>Одежда ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мужские толстовки и кофты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мужские футболки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Женские комплекты</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Повседневные платья</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мужские куртки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бейсболки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Шапочки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Мужские штаны и брюки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Тренировочной одежды</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Чемоданы, сумки и портфели</h4>
+                                <div class="category-box" style="top: -200%;">
+                                   <a href=""><h4>Чемоданы, сумки и портфели ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Дамские сумочки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сумки для покупок</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Женские Сумки через плечо</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Женские сумки-мессенджеры Сумки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Женская сумка-тоут Сумки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Косметические сумки и чехлы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Женские сумочки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумажники</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Дорожные сумки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Часы, ювелирные изделия, очки</h4>
+                                <div class="category-box" style="top: -300%;">
+                                    <a href=""><h4>Часы, ювелирные изделия, очки ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кварцевые часы для мужчин</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ожерелья</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Гибкие и жесткие браслеты</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Серьги</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Солнцезащитные очки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кольца</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ожерелья</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Коробки для украшений</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ювелирные наборы</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Печать и упаковка</h4>
+                                <div class="category-box" style="top: -400%;">
+                                    <a href=""><h4>Печать и упаковка ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумажные коробки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластик Сумки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стеклянные бутылки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Трансферная печать</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Упаковочные этикетки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластиковые бутылки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумажные пакеты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бумага и картон для печати</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Почтовые сумки</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Красота</h4>
+                                <div class="category-box" style="top: -500%;">
+                                    <a href=""><h4>Красота ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Парики</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Волосы для наращивания</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Накладные ресницы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ленточные Eeylashes</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>УФ-гель</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Губная помада</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Искусственные ногти</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кожа Уход Сыворотка</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Тени для век</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="general">
+                    <h3>Сырье</h3>
+                    <div class="specific">
+                        <ul>
+                            <li>
+                                <h4>Химикаты</h4>
+                                <div class="category-box">
+                                    <a href=""><h4>Химикаты ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Клеи и герметики</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Промежуточные органические продукты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Ароматы и парфюм</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Краски и покрытия</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Вспомогательный химический агент</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Бытовая химия</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пигмент</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Смазка</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Полимеры</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Металлы и сплавы</h4>
+                                <div class="category-box" style="top: -100%;">
+                                    <a href=""><h4>Металлы и сплавы ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Магнитные материалы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Алюминиевые профили</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стальные листы</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стальные конструкции</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Медный лом</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие металлы и металлопродукция</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сетка из стальной проволоки</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Стальной профиль</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Железная проволочная</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Резина и пластмассы</h4>
+                                <div class="category-box" style="top: -200%;">
+                                    <a href=""><h4>Резина и пластмассы ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластиковые листы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие изделия из резины</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие изделия из пластика</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Резиновые шланги</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластмассовые стержни</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластиковые сетки</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Силиконовая резина</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Листы резины</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Пластмассовые изделия для</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Ткани и текстиль</h4>
+                                <div class="category-box" style="top: -300%;">
+                                    <a href=""><h4>Ткани и текстиль ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Смесовая пряжа</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>100% полиэстер</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Трикотажные ткани для дома</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>100% хлопчатобумажная ткань</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Подкладка Ткань</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Синтетическая кожа</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Спандекс</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Полиэстеровая/хлопковая ткань</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Прочие ткани</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <h4>Сельское хозяйство</h4>
+                                <div class="category-box" style="top: -400%;">
+                                    <a href=""><h4>Сельское хозяйство ></h4></a>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Сельскохозяйственные теплицы</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другие сельскохозяйственные продукты</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Корм для животных</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Рис</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Другое оборудование для аквакультуры</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Свежий чеснок</h5></figure></a>
+                                    </div>
+                                    <div class="col-box">
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Свежий лук</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Кофейные зерна</h5></figure></a>
+                                        <a href=""><figure><img src="img/iphone.jpg" alt=""><h5>Свежесрезанные цветы</h5></figure></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+            <!--    <h3>Электроника</h3>
                     <div class="category-box">
                         <div class="colbox">
                             <ul>
@@ -294,8 +1332,7 @@
                         </div>
                     </div>
                 </li>
-            </ul>
-        </div>
+            </ul>-->
     </header>
     <main>
         <section class="description-box">
